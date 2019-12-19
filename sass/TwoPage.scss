@@ -67,7 +67,7 @@
 //Миксины
 
 //подключаем шрифты
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic");
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap");
 
@@ -1576,8 +1576,8 @@ input:checked ~ .details {
     font-size: 40px;
     font-family: "Beer Money";
 }
-@media only screen and (min-width: 700px)
-{
+
+@media only screen and (min-width: 700px) {
     .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper {
         line-height: 0;
         text-align: center;
@@ -1586,6 +1586,7 @@ input:checked ~ .details {
         height: 100%;
     }
 }
+
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .intrinsic .image-block-wrapper img {
     position: absolute;
     top: 0;
@@ -1785,13 +1786,16 @@ figcaption span .img {
         margin: 40px auto !important;
     }
 }
+
 @media only screen and (max-width: 440px) {
     .circle {
         width: 250px;
         height: 250px;
     }
 }
-.middle-text{
+
+.middle-text {
     text-align: justify;
 }
+
 /////////////////////////

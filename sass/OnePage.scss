@@ -67,9 +67,17 @@
 //Миксины
 
 //подключаем шрифты
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic");
 
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap");
+
+@font-face {
+    font-family: 'Beer money';
+    src: url("fonts/beer money.eot");
+    src: local("☺"), url("fonts/beer money.woff") format("woff"), url("fonts/beer money.ttf") format("truetype"), url("fonts/beer money.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 
 //
 //переменные
