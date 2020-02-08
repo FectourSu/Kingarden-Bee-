@@ -278,7 +278,7 @@ ul {
   letter-spacing: 0.2px;
   font-size: 14px;
   color: lightgray;
-  font-family: "Roboto Medium";
+  font-family: "Roboto medium";
   padding: 13px;
   text-transform: uppercase;
   -webkit-transition: color .3s ease;
@@ -381,7 +381,7 @@ body.top-navigation-alignment-center .horizontal-navigation-bar {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: "Roboto Medium";
+    font-family: "Roboto medium";
   }
   .toggle {
     display: block;
@@ -415,7 +415,7 @@ body.top-navigation-alignment-center .horizontal-navigation-bar {
     letter-spacing: 0.2px;
     font-size: 14px;
     color: #c5681c;
-    font-family: "Roboto Medium";
+    font-family: "Roboto medium";
     text-transform: uppercase;
   }
   a {
@@ -569,7 +569,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-title {
-  font-family: "Roboto Thin";
+  font-family: "Roboto thin";
   font-size: 62px;
   font-weight: 500;
   font-style: normal;
@@ -1429,7 +1429,7 @@ input:checked ~ .toggle {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 16px;
-  font-family: "Roboto Light";
+  font-family: "Roboto light";
 }
 
 .details3 {

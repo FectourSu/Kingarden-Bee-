@@ -72,18 +72,19 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap");
 
 @font-face {
-    font-family: 'Beer money';
+    font-family: 'beer money';
     src: url("../fonts/beer money.eot");
-    src: local("☺"), url("fonts/beer money.woff") format("woff"), url("fonts/beer money.ttf") format("truetype"), url("fonts/beer money.svg") format("svg");
+    src: local("☺"), url("../fonts/beer money.woff") format("woff"), url("../fonts/beer money.ttf") format("truetype"), url("../fonts/beer money.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-	font-family: 'Calibri';
-	src: url('../fonts/8277.eot');
-	src: local('☺'), url('fonts/8277.woff') format('woff'), url('fonts/8277.ttf') format('truetype'), url('fonts/8277.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Calibri';
+    src: url("../fonts/8277.eot");
+    src: local("☺"), url("../fonts/8277.woff") format("woff"), url("../fonts/8277.ttf") format("truetype"), url("../fonts/8277.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
 }
 
 //
@@ -689,7 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-title {
-    font-family: "Roboto Thin";
+    font-family: "Roboto thin";
     font-size: 62px;
     font-weight: 500;
     font-style: normal;
@@ -1589,7 +1590,7 @@ input:checked ~ .details {
     margin-bottom: 5px;
     color: #fff;
     font-size: 40px;
-    font-family: "Beer Money";
+    font-family: "beer money";
 }
 
 .sqs-block-image .image-block-outer-wrapper:not(.image-block-v2) .image-block-wrapper {
