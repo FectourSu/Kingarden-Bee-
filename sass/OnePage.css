@@ -1432,7 +1432,7 @@ input {
 @media only screen and (max-width: 600px) {
   .toggle {
     font-size: 42px !important;
-    line-height: 1.11em !important;
+    line-height: 1.3em !important;
   }
 }
 
