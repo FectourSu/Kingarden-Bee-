@@ -1426,13 +1426,12 @@ input {
           box-shadow: 0 0 0 0px #9935b8;
   color: #ff9100;
   line-height: 1.17em;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 600px) {
   .toggle {
     font-size: 44px !important;
-    line-height: 1.1em !important;
+    line-height: 1.05em !important;
   }
 }
 
