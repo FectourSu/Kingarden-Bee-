@@ -587,7 +587,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-title {
-  font-family: "Roboto thin";
+  font-family: "Roboto Thin";
   font-size: 62px;
   font-weight: 500;
   font-style: normal;
@@ -1223,7 +1223,7 @@ body.footer-alignment-left #footer-blocks, body.footer-alignment-center #footer-
           align-items: center;
   height: 100%;
   margin: auto;
-  font-family: "Roboto light";
+  font-family: "Roboto Light";
   width: 350px;
   font-size: 30px;
   -webkit-animation: load 1.0s infinite 0s ease-in-out;
@@ -1426,6 +1426,14 @@ input {
           box-shadow: 0 0 0 0px #9935b8;
   color: #ff9100;
   line-height: 1.17em;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggle {
+    font-size: 42px !important;
+    line-height: 1.11em !important;
+  }
 }
 
 input:checked ~ .toggle {

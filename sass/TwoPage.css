@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap&subset=cyrillic,cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&display=swap&subset=cyrillic");
 * {
   padding: 0px;
   margin: 0px;
@@ -278,7 +279,7 @@ ul {
   letter-spacing: 0.2px;
   font-size: 14px;
   color: lightgray;
-  font-family: "Roboto medium";
+  font-family: "Roboto Medium";
   padding: 13px;
   text-transform: uppercase;
   -webkit-transition: color .3s ease;
@@ -381,7 +382,7 @@ body.top-navigation-alignment-center .horizontal-navigation-bar {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    font-family: "Roboto medium";
+    font-family: "Roboto Medium";
   }
   .toggle {
     display: block;
@@ -415,7 +416,7 @@ body.top-navigation-alignment-center .horizontal-navigation-bar {
     letter-spacing: 0.2px;
     font-size: 14px;
     color: #c5681c;
-    font-family: "Roboto medium";
+    font-family: "Roboto Medium";
     text-transform: uppercase;
   }
   a {
@@ -569,7 +570,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #page-title {
-  font-family: "Roboto thin";
+  font-family: "Roboto Thin";
   font-size: 62px;
   font-weight: 500;
   font-style: normal;
@@ -816,7 +817,7 @@ img {
 }
 
 #canvas-wrapper h1:not(#site-title):not(#page-title) {
-  font-family: "Roboto light";
+  font-family: "Roboto Light";
   font-size: 20px;
   font-weight: 100;
   font-style: normal;
