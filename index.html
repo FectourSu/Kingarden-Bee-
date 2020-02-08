@@ -11,10 +11,12 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/Loader.js"></script>
   <script src="js/slider.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </head>
@@ -41,7 +43,7 @@
         <a class = "click_link" href ="#">Группы</a>
       </li>
       <li class="mobile-link">
-        <a class = "click_link" href ="#">Воспитатели</a>
+        <a class = "click_link" href ="ThreePage.html">Воспитатели</a>
       </li>
       <li class="mobile-link">
         <a class = "click_link" href ="#">Контакты</a>
@@ -51,7 +53,7 @@
   <!--Main-->
   <div id="canvas-wrapper">
     <div id="canvas">
-      <div id="page-header-wrapper">
+      <header id="page-header-wrapper">
         <div class="page-header">
         <div id = "navigation-top">
           <div class="horizontal-navigation-bar clear with-logo" id="yui_3_17_2_1_1573404656386_663">
@@ -75,7 +77,7 @@
               </li class="folder-collection">
               <p class="tab">/</p>
               <li class="folder-collection">
-                <a href="#" class="header-menu__link for">ВОСПИТАТЕЛИ</a>
+                <a href="ThreePage.html" class="header-menu__link for">ВОСПИТАТЕЛИ</a>
               </li class="folder-collection">
               <p class="tab">/</p>
               <li class="folder-collection">
@@ -131,8 +133,8 @@
           </div>
          </div>
         </div>
-      </div>
-      <div id="page-body-wrapper" class="one-sidebar">
+      </header>
+      <main id="page-body-wrapper" class="one-sidebar">
         <div id="page-body">
           <div id="content-wrapper">
           <div id="content">
@@ -190,7 +192,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <div id="page-body-wrapper-middle" clas="one-sidebar">
         <div id="page-body">
           <div id="content-wrapper" style="margin-bottom: 10px;">
@@ -211,7 +213,9 @@
                          id="block-4a428bf206f51c4040a7">
                          <div class="sqs-block-content lz">
                            <h1
-                             style=" display: block; margin-top: 15px; text-align:center; text-transform: uppercase; font-size: 30px; line-height: 0px; color: rgb(153, 53, 184); font-family: Roboto light;" id = "anim1" class = 'animated'>
+                             style=" display: block; margin-top: 15px; text-align:center; text-transform: uppercase;
+                             font-size: 30px; line-height: 0px; color: rgb(153, 53, 184); font-family: Roboto light;"
+                             class = 'animated'>
                             Наши классы
                            </h1>
                          </div>
@@ -224,7 +228,7 @@
                        </div>
                      </div>
                     <!--CARD-->
-                    <div class="card-anim animated" id = "anim2">
+                    <div class="card-anim animated" id="anim2" data-aos="fade-up" data-aos-duration="500">
                     <div class="col sqs-col-4 span-4 temp-col">
                         <div class="container sqs-block image-block sqs-block-image sqs-text-ready"
                           data-aspect-ratio="101.16731517509727" data-block-type="5" style ="padding-top: 12px;">
@@ -341,9 +345,10 @@
           </div>
         </div>
       </div>
-      <div id="page-body-wrapper-bottom" clas="one-sidebar">
+      <footer id="page-body-wrapper-bottom" clas="one-sidebar">
         <div id="page-footer">
-          <div class="sqs-layout sqs-grid-12 columns-12 animated" id = "anim3">
+          <div class="sqs-layout sqs-grid-12 columns-12 animated" id="anim3" data-aos="fade-up"
+            data-aos-duration="500">
             <div class="row sqs-row">
               <div class="col sqs-col-6 span-6">
                 <div class="sqs-block html-block sqs-block-html" style="padding-top: 12px;">
@@ -383,8 +388,7 @@
               <div class="col sqs-col-1 span-1 icon-style">
                 <div class="sqs-block image-block sqs-block-image sqs-text-ready" style=" padding-right: 0;">
                   <div class="sqs-block-content">
-                    <div
-                      class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-none individual-animation-none individual-text-animation-none sqs-narrow-width">
+                    <div class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-none individual-animation-none individual-text-animation-none sqs-narrow-width">
                       <div class="intrinsit" style="max-width:60.0px;">
                         <a href="https://vk.com/fectours">
                           <div style="padding-bottom: 100%; overflow: hidden;"
@@ -400,8 +404,7 @@
               <div class="col sqs-col-1 span-1 icon-style">
                 <div class="sqs-block image-block sqs-block-image sqs-text-ready" style=" padding-right: 0;">
                   <div class="sqs-block-content">
-                    <div
-                      class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-none individual-animation-none individual-text-animation-none sqs-narrow-width">
+                    <div class="image-block-outer-wrapper layout-caption-below design-layout-inline combination-animation-none individual-animation-none individual-text-animation-none sqs-narrow-width">
                       <div class="intrinsit" style="max-width:60.0px;">
                         <a href="https://www.facebook.com/profile.php?id=100004786417884">
                           <div style="padding-bottom: 100%; overflow: hidden;"
@@ -419,7 +422,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 
@@ -435,6 +438,11 @@
       <h2 class="animate">ЗАГРУЗКА</h2>
     </div>
   </div>
+
+<!--Preloader-->
+  <script>
+    AOS.init();
+  </script>
 
   <!--Больше-->
   <script>
@@ -460,9 +468,8 @@
   
   <!--Полетели-->
   <script>
-      function backTOP() {
-        //Наведение на кнопку
-        $("#img ").hover(
+  //Наведение на кнопку
+    $("#img ").hover(
         function () {
         $(this).attr("src","source/upOne.png");
         },
@@ -489,49 +496,30 @@
         },
         function () {
         $(this).attr("src","source/фб.png");
-        });
-        //Логика
+    });
+    function backTOP() {
+        //Логика анимации (и якоря вверх)
         let = button = $('#img')
         $(window).on('scroll', () => 
         {
-          if($(this).scrollTop() >= 60)
-          {
-            $('#anim2').addClass('slideInLeft').css('display', 'block');
-            if($(this).scrollTop() >= 600)
-            {
-              $('#anim3').addClass('slideInUp').css('display', 'block');
-            }
-          }
           if($(this).scrollTop() >= 50)
           {
-            $('#anim1').addClass('slideInRight').css('display', 'block');
             button.fadeIn();//виден
             $('.position-button').fadeIn();
           }
           else
           {
-            if($(window).height() < 800)
-            {
-              $('#anim1').fadeOut();
-              $('#anim2').fadeOut();
-              $('#anim3').fadeOut();
-            }
-            else{
-              $('#anim1').fadeIn();
-              $('#anim2').fadeIn();
-              $('#anim3').fadeIn();
-            }
             button.fadeOut();//скрыт
             $('.position-button').fadeOut();
-          }
+        }
         });
         button.on('click', (e) =>
         {
           e.preventDefault();
           $('html').animate({scrollTop:0}, 1500);//скорость анимации якоря
-        });
-      }
-      backTOP();
+       });
+     }
+    backTOP();
   </script>
 
   <!--BurgerАнимация-->

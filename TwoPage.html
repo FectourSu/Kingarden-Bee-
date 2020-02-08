@@ -11,11 +11,13 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/Loader.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body
   class="canvas-setting-full-width   banner-content-page-title-description banner-alignment-center page-thumbnail-as-banner stretch-page-thumbnail top-navigation-position-above-banner top-navigation-alignment-center disable-navigation-border  sidebar-position-right underline-sidebar-h3  footer-alignment-center  social-icon-style-normal social-icon-placement-top-only  blog-list-display-full blog-byline-bottom blog-dateline-top disable-pagination-border    show-products-category-navigation hide-album-share-link  event-show-past-events event-thumbnails event-thumbnail-size-32-standard event-date-label  event-list-show-cats event-list-date event-list-time event-list-address   event-icalgcal-links  event-excerpts      gallery-design-slideshow aspect-ratio-auto lightbox-style-dark gallery-navigation-thumbnails gallery-info-overlay-always-show gallery-aspect-ratio-32-standard gallery-arrow-style-round-corners gallery-transitions-fade gallery-show-arrows gallery-auto-crop   product-list-titles-under product-list-alignment-center product-item-size-32-standard  product-gallery-size-11-square product-gallery-auto-crop show-product-price show-product-item-nav product-social-sharing tweak-v1-related-products-image-aspect-ratio-11-square tweak-v1-related-products-details-alignment-center newsletter-style-dark hide-opentable-icons opentable-style-dark small-button-style-solid small-button-shape-square medium-button-style-solid medium-button-shape-square large-button-style-solid large-button-shape-square image-block-poster-text-alignment-center image-block-card-dynamic-font-sizing image-block-card-content-position-center image-block-card-text-alignment-left image-block-overlap-dynamic-font-sizing image-block-overlap-content-position-center image-block-overlap-text-alignment-left image-block-collage-dynamic-font-sizing image-block-collage-content-position-top image-block-collage-text-alignment-left image-block-stack-dynamic-font-sizing image-block-stack-text-alignment-left button-style-solid button-corner-style-square tweak-product-quick-view-button-style-floating tweak-product-quick-view-button-position-bottom tweak-product-quick-view-lightbox-excerpt-display-truncate tweak-product-quick-view-lightbox-show-arrows tweak-product-quick-view-lightbox-show-close-button tweak-product-quick-view-lightbox-controls-weight-light native-currency-code-usd collection-55515e96e4b08a90b7f46f59 collection-type-page collection-layout-default homepage mobile-style-available has-logo-image has-page-thumbnail"
@@ -43,7 +45,7 @@
         <a class="click_link" href="#">Группы</a>
       </li>
       <li class="mobile-link">
-        <a class="click_link" href="#">Воспитатели</a>
+        <a class="click_link" href="ThreePage.html">Воспитатели</a>
       </li>
       <li class="mobile-link">
         <a class="click_link" href="#">Контакты</a>
@@ -53,7 +55,7 @@
   <!--Main-->
   <div id="canvas-wrapper">
     <div id="canvas">
-      <div id="page-header-wrapper">
+      <header id="page-header-wrapper">
         <div class="page-header">
           <div id="navigation-top">
             <div class="horizontal-navigation-bar clear with-logo" id="yui_3_17_2_1_1573404656386_663">
@@ -77,7 +79,7 @@
                   </li class="folder-collection">
                   <p class="tab">/</p>
                   <li class="folder-collection">
-                    <a href="#" class="header-menu__link for">ВОСПИТАТЕЛИ</a>
+                    <a href="ThreePage.html" class="header-menu__link for">ВОСПИТАТЕЛИ</a>
                   </li class="folder-collection">
                   <p class="tab">/</p>
                   <li class="folder-collection">
@@ -104,7 +106,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </header>
         <!--STOP-->
         <div class="row sqs-row">
           <div class="col sqs-col-12 span-12">
@@ -118,7 +120,7 @@
           </div>
         </div>
       </div>
-      <div id="page-body-wrapper-middle" clas="one-sidebar">
+      <middle id="page-body-wrapper-middle" clas="one-sidebar">
         <div id="page-body">
           <div id="content-wrapper" style="margin-bottom: 10px;">
             <div id="content">
@@ -133,12 +135,12 @@
                           <h1 class = "middle-h1"
                             style=" display: block;  text-transform: uppercase;  text-align: center; margin-bottom: 55px; font-size: 30px; line-height: 0px; color: rgb(153, 53, 184); font-family: Roboto light;">
                             Что нас отличает</h1>
-                          <div class="animated" id = "anim1">
+                          <div class="animated" id="anim1" data-aos="fade-right" data-aos-duration="500">
                           <div class="circle">
                              <img style = "width: 100%; height: 100%;" src="source/images.jpg">
                           </div>
                           </div>
-                          <div class="animated" id="anim2">
+                          <div class="animated" id="anim2" data-aos="fade-left" data-aos-duration="500">
                           <p class="middle-text">«Пчёлка» была основана в 1979 году группой родителей, которые
                             хотели участвовать в раннем образовательном процессе своих детей. Хотя времена и семьи
                             изменились, детская игра осталась верной духу кооперативной школы и нашей руководящей
@@ -182,6 +184,7 @@
             </div>
           </div>
         </div>
+      </middle>
         <!--STOP-->
         <div class="row sqs-row">
           <div class="col sqs-col-12 span-12">
@@ -194,10 +197,9 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="page-body-wrapper-bottom" clas="one-sidebar">
+      <footer id="page-body-wrapper-bottom" clas="one-sidebar">
         <div id="page-footer">
-          <div class="sqs-layout sqs-grid-12 columns-12 animated" id="anim3">
+          <div class="sqs-layout sqs-grid-12 columns-12 animated" id="anim3" data-aos="fade-up" data-aos-duration="500">
             <div class="row sqs-row">
               <div class="col sqs-col-6 span-6">
                 <div class="sqs-block html-block sqs-block-html" style="padding-top: 12px;">
@@ -277,12 +279,14 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
+
   <!--UP-->
   <div class="position-button">
     <a href="#" class="back-to-top"><img id="img" class="back-size" src="source/upTwo.png" width="47px"
         height="50px"></a>
   </div>
+
   <!--Loading-->
   <div class="img"></div>
   <div class="loader">
@@ -290,73 +294,62 @@
       <h2 class="animate">ЗАГРУЗКА</h2>
     </div>
   </div>
-
+  <script>
+    AOS.init();
+  </script>
   <!--Полетели-->
   <script>
+  //Наведение на кнопку
+    $("#img ").hover(
+        function () {
+        $(this).attr("src","source/upOne.png");
+        },
+        function () {
+        $(this).attr("src","source/upTwo.png");
+        });
+        $("#imginvert1").hover(
+        function () {
+        $(this).attr("src","source/инста.png");
+        },
+        function () {
+        $(this).attr("src","source/иб.png");
+        });
+        $("#imginvert2").hover(
+        function () {
+        $(this).attr("src","source/вк.png");
+        },
+        function () {
+        $(this).attr("src","source/вб.png");
+        });
+        $("#imginvert3").hover(
+        function () {
+        $(this).attr("src","source/фейсбук.png");
+        },
+        function () {
+        $(this).attr("src","source/фб.png");
+    });
     function backTOP() {
-      //Наведение на кнопку
-      $("#img ").hover(
-        function () {
-          $(this).attr("src", "source/upOne.png");
-        },
-        function () {
-          $(this).attr("src", "source/upTwo.png");
-        });
-      $("#imginvert1").hover(
-        function () {
-          $(this).attr("src", "source/инста.png");
-        },
-        function () {
-          $(this).attr("src", "source/иб.png");
-        });
-      $("#imginvert2").hover(
-        function () {
-          $(this).attr("src", "source/вк.png");
-        },
-        function () {
-          $(this).attr("src", "source/вб.png");
-        });
-      $("#imginvert3").hover(
-        function () {
-          $(this).attr("src", "source/фейсбук.png");
-        },
-        function () {
-          $(this).attr("src", "source/фб.png");
-        });
-      //Логика
-      let = button = $('#img')
-      $(window).on('scroll', () => {
-        if ($(this).scrollTop() >= 2) {
-          $('#anim2').addClass('slideInRight').css('display', 'block');
-          if ($(this).scrollTop() >= 800) {
-            $('#anim3').addClass('slideInUp').css('display', 'block');
+        //Логика анимации (и якоря вверх)
+        let = button = $('#img')
+        $(window).on('scroll', () => 
+        {
+          if($(this).scrollTop() >= 50)
+          {
+            button.fadeIn();//виден
+            $('.position-button').fadeIn();
           }
-        }
-        if ($(this).scrollTop() >= 2) {
-          $('#anim1').addClass('slideInLeft').css('display', 'block');
-          button.fadeIn(); //виден
-          $('.position-button').fadeIn();
-        } else {
-          if ($(window).height() < 700) {
-            $('#anim1').fadeOut();
-            $('#anim2').fadeOut();
-            $('#anim3').fadeOut();
-          } else {
-            $('#anim1').fadeIn();
-            $('#anim2').fadeIn();
-            $('#anim3').fadeIn();
+          else
+          {
+            button.fadeOut();//скрыт
+            $('.position-button').fadeOut();
           }
-          button.fadeOut(); //скрыт
-          $('.position-button').fadeOut();
-        }
-      });
-      button.on('click', (e) => {
-        e.preventDefault();
-        $('html').animate({
-          scrollTop: 0
-        }, 1500); //скорость анимации якоря
-      });
-    }
+        });
+        button.on('click', (e) =>
+        {
+          e.preventDefault();
+          $('html').animate({scrollTop:0}, 1500);//скорость анимации якоря
+       });
+     }
     backTOP();
   </script>
 

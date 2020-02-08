@@ -1524,6 +1524,9 @@ input:checked ~ .details {
   .style-block {
     max-height: 70% !important;
   }
+  .toggle {
+    line-height: 1.10em !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {

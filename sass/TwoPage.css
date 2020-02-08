@@ -1706,4 +1706,87 @@ figcaption span .img {
 .middle-text {
   text-align: justify;
 }
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px;
+}
+
+.container .box {
+  position: relative;
+  padding: 80px 40px 40px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-align: center;
+  background: #fff;
+}
+
+.container .box:hover {
+  background: orange;
+}
+
+.container .box p {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: gray;
+}
+
+.container .box h4 {
+  margin: 20px 0 0;
+  padding: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #9335b8;
+}
+
+.container .box h4 span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c5c5c5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.container .box:hover p,
+.container .box:hover h4,
+.container .box:hover h4 span {
+  color: #fff;
+}
+
+.container .box .imgbox {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  top: -63px;
+  left: 43%;
+  -webkit-transition: translateX(-50%, -50%);
+  transition: translateX(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.container .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: url();
+}
 /*# sourceMappingURL=TwoPage.css.map */
