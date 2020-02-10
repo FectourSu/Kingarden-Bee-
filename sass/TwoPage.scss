@@ -700,10 +700,7 @@ img {
 
 .data {
     font-size: 0px;
-    left: 0px;
-    top: -200px;
-    width: 1492px;
-    height: 700px;
+    background: no-repeat center center !important;
     position: relative;
 }
 
@@ -713,7 +710,7 @@ img {
         font-size: 0px;
         position: relative;
         left: 0px;
-        top: -300px;
+        top: -200px;
         width: 2000px;
         height: 900px;
     }
@@ -724,7 +721,7 @@ img {
         font-size: 0px;
         position: relative;
         left: 0px;
-        top: -530px;
+        top: -330px;
         width: 3000px;
         height: 1400px;
     }
@@ -738,17 +735,6 @@ img {
         top: -2000px;
         width: 9000px;
         height: 5000px;
-    }
-}
-
-@media (max-width: 850px) {
-    .size {
-        font-size: 0px;
-        position: relative;
-        top: -200px;
-        left: -100px;
-        width: 1492px;
-        height: 700px;
     }
 }
 
@@ -770,14 +756,6 @@ img {
 }
 
 @media (max-width: 400px) {
-    .size {
-        font-size: 0px;
-        position: relative;
-        top: -120px;
-        left: -130px;
-        width: 1000px;
-        height: 500px;
-    }
 
     .s1 {
         font-size: 41px !important;
