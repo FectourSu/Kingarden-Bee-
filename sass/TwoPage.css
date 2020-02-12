@@ -812,10 +812,6 @@ img {
   margin-bottom: 0;
 }
 
-.sqs-block-html .sqs-block-content > *:first-child {
-  margin-top: 0;
-}
-
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 24px;
 }
@@ -1687,23 +1683,26 @@ figcaption span .img {
 }
 
 .container {
-  width: 1040px;
-  margin: 0 auto;
+  max-width: 800px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
   grid-gap: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 20px;
+  padding-top: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
 }
 
 .container .box {
   position: relative;
   padding: 80px 40px 40px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   text-align: center;
   background: #fff;
 }
@@ -1712,19 +1711,39 @@ figcaption span .img {
   background: orange;
 }
 
+.container .box:hover .imgbox {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 10px solid orange;
+}
+
+.container .purple:hover {
+  background: #9335b8;
+}
+
+.container .purple:hover .imgbox {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: 10px solid #9335b8;
+}
+
 .container .box p {
   margin: 0;
   padding: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   color: gray;
+}
+
+.container .box h4 .h4p {
+  color: orange !important;
 }
 
 .container .box h4 {
   margin: 20px 0 0;
   padding: 0;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1736,8 +1755,8 @@ figcaption span .img {
   font-size: 14px;
   font-weight: 600;
   color: #c5c5c5;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .container .box:hover p,
@@ -1747,25 +1766,83 @@ figcaption span .img {
 }
 
 .container .box .imgbox {
+  width: 140px;
+  height: 140px;
+  margin: auto;
   position: absolute;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  top: -63px;
-  left: 43%;
-  -webkit-transition: translateX(-50%, -50%);
-  transition: translateX(-50%, -50%);
+  top: -110%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: translateX(-50%);
+  transition: translateX(-50%);
   border-radius: 50%;
   overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.container .box::before {
+.container .box:before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  right: 40px;
   width: 80px;
   height: 80px;
-  background: url();
+  background: url(../source/quotes.png);
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .box:hover:before {
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  opacity: 1;
+}
+
+.portfolio-img {
+  position: relative;
+  left: -40px;
+  right: 0;
+  top: auto;
+  bottom: auto;
+}
+
+.container .box:after {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  width: 80px;
+  height: 80px;
+  background: url(../source/quotes.png);
+  background-size: cover;
+  opacity: 0.05;
+  pointer-events: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: rotate(180deg) translateY(0px);
+          transform: rotate(180deg) translateY(0px);
+}
+
+.container .box:hover:after {
+  -webkit-transform: rotate(180deg) translateY(-60px);
+          transform: rotate(180deg) translateY(-60px);
+  opacity: 1;
+}
+
+::-moz-selection {
+  background: orange;
+  color: white;
+}
+
+::selection {
+  background: orange;
+  color: white;
 }
 /*# sourceMappingURL=TwoPage.css.map */

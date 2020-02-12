@@ -753,7 +753,6 @@ img {
     }
 }
 
-
 @media (max-width: 600px) {
     .size {
         font-size: 0px;
@@ -1499,7 +1498,7 @@ input {
     line-height: 1.17em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
     .toggle {
         font-size: 42px !important;
         line-height: 1.3em !important;
@@ -1665,3 +1664,16 @@ input:checked ~ .details {
 }
 
 ///////////
+
+////SELECT
+::-moz-selection {
+    background: orange;
+    color:white;
+}
+
+::selection {
+    background: orange;
+    color:white;
+}
+
+//////////

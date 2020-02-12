@@ -1406,7 +1406,7 @@ input {
   line-height: 1.17em;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   .toggle {
     font-size: 42px !important;
     line-height: 1.3em !important;
@@ -1573,5 +1573,15 @@ input:checked ~ .details {
 .footer-anim {
   height: 100%;
   width: 100%;
+}
+
+::-moz-selection {
+  background: orange;
+  color: white;
+}
+
+::selection {
+  background: orange;
+  color: white;
 }
 /*# sourceMappingURL=OnePage.css.map */
