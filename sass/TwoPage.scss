@@ -1927,6 +1927,11 @@ figcaption span .img {
         text-transform: none !important;
         padding: 0 !important;
     }
+    .kids .a-page {
+        text-transform: none !important;
+        padding: 0 !important;
+        color: #863498;
+    }
 }
 
 .a-page {
@@ -2008,7 +2013,7 @@ figcaption span .img {
     display: block;
 }
 
-.kids {
+.kids .a-page {
     color: #863498;
     font-family: "Roboto Regular" !important;
     font-size: 24px !important;
