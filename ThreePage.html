@@ -16,6 +16,9 @@
   <script src="js/Loader.js"></script>
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src ="js/burgermenu.js"></script>
+  <script src="js/hoverbutton.js"></script>
+  <script src="js/menu.js"></script>
 </head>
 
 <body
@@ -301,6 +304,7 @@
         <h2 class="animate">ЗАГРУЗКА</h2>
       </div>
     </div>
+    <!--AOS-->
     <script>
       AOS.init({
         once: true
@@ -308,93 +312,17 @@
     </script>
     <!--Полетели-->
     <script>
-  //Наведение на кнопку
-    $("#img ").hover(
-        function () {
-        $(this).attr("src","source/upOne.png");
-        },
-        function () {
-        $(this).attr("src","source/upTwo.png");
-        });
-        $("#imginvert1").hover(
-        function () {
-        $(this).attr("src","source/инста.png");
-        },
-        function () {
-        $(this).attr("src","source/иб.png");
-        });
-        $("#imginvert2").hover(
-        function () {
-        $(this).attr("src","source/вк.png");
-        },
-        function () {
-        $(this).attr("src","source/вб.png");
-        });
-        $("#imginvert3").hover(
-        function () {
-        $(this).attr("src","source/фейсбук.png");
-        },
-        function () {
-        $(this).attr("src","source/фб.png");
-    });
-    function backTOP() {
-        //Логика анимации (и якоря вверх)
-        let = button = $('#img')
-        $(window).on('scroll', () => 
-        {
-          if($(this).scrollTop() >= 50)
-          {
-            button.fadeIn();//виден
-            $('.position-button').fadeIn();
-          }
-          else
-          {
-            button.fadeOut();//скрыт
-            $('.position-button').fadeOut();
-        }
-        });
-        button.on('click', (e) =>
-        {
-          e.preventDefault();
-          $('html').animate({scrollTop:0}, 1500);//скорость анимации якоря
-       });
-     }
-    backTOP();
-  </script>
+    //Наведение на кнопку
+      hover();
+    </script>
 
     <!--BurgerАнимация-->
     <script>
-      $(".mobile-link").click(function () {
-        if ($('.mobile-link').hasClass('active')) {
-          $('.mobile-link').removeClass('active');
-          $(this).toggleClass('active');
-        }
-      });
-      //Сверху кнопки подсветил, снизу бургер покрутил
-      $("#mobile-navigation-label").click(function () {
-        $('#anim-toggle').toggle('').css({
-          display: 'block'
-        });
-      });
-      //Функция анимации
-      (function () {
-        $("svg").click(function () {
-          return $("#mobile-navigation-label").toggleClass("cross");
-        });
-        $("mobile-navigation-label").click(function () {
-          clearInterval(i);
-          return $("#mobile-navigation-label").toggleClass("cross");
-        });
-      }).call(this);
+      burger();
     </script>
 
     <!--MENU-->
     <script>
-      $('.header-menu__link').hover(function () {
-        if ($('.header-menu__link').hasClass('active-link')) {
-          $('.header-menu__link').removeClass('active-link');
-        } else
-          $('.for').addClass('active-link');
-      });
+      menu(".for");
     </script>
 </body>

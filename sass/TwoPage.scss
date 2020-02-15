@@ -1369,7 +1369,7 @@ body.footer-alignment-left #footer-blocks, body.footer-alignment-center #footer-
 //Адаптив
 @media only screen and (max-width: 380px) {
     .back-size {
-        width: 35px !important;
+        width: 33px !important;
         height: 35px !important;
     }
 
@@ -1895,7 +1895,7 @@ figcaption span .img {
     position: relative;
     left: -40px;
     right: 0;
-    top: auto;
+    top: -15px;
     bottom: auto;
 }
 
@@ -1933,8 +1933,9 @@ figcaption span .img {
     color: rgba(191, 12, 207, 0.93);
 }
 
-.ajaxpage-2, .ajaxpage-1 {
-    display: contents;
+.ajaxpage-2, 
+.ajaxpage-1 {
+    display: inherit;
     transition: 0.3s;
     color: lightgray;
     text-transform: none !important;
