@@ -646,6 +646,9 @@ img {
   .s2 {
     font-size: 51px !important;
   }
+  #page-title {
+    font-family: "Roboto Light" !important;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1979,6 +1982,7 @@ figcaption span .img {
   transition: 0.5s;
   font-family: "Roboto Thin";
   text-transform: uppercase;
+  color: lightgray;
 }
 
 .container-c .box-c .icon-c .fas {
@@ -2066,86 +2070,243 @@ figcaption span .img {
   margin: 30px 0 40px !important;
 }
 
-.field {
-  margin: 1em 0;
+#contact-form {
+  max-width: 1208px;
+  max-width: 75.5rem;
+  margin: 0 auto;
+}
+
+#contact, label, input[name="submit"] {
+  position: relative;
+}
+
+label > span, input, textarea, button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 label {
   display: block;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  color: #999999;
 }
 
-input {
-  width: 100%;
-  padding: 0.5em 0.5em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-  color: #5c5c5c;
+label > span {
+  display: none;
   font-size: 16px;
+  font-family: "Roboto Light";
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font: 300 100%/1.2 Ubuntu, sans-serif;
+}
+
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1.5em;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Roboto Light";
+  height: 3em;
+}
+
+input.invalid, textarea.invalid {
+  border-color: #e25151;
 }
 
 textarea {
-  width: 100%;
-  height: 200px;
-  padding: 0.5em 0.5em;
-  border-radius: 3px;
-  border: 1px solid #D9D9D9;
-  color: #5c5c5c;
-  font-size: 16px;
+  height: 6em;
 }
 
-button {
-  display: inline-block;
-  font-size: 0.9rem;
-  background: rgba(191, 12, 207, 0.93);
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-weight: bold;
-  margin-top: 20px;
-  width: 150px;
-  height: 50px;
-  text-align: center;
+.but {
   text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: orange;
+  color: white !important;
   font-family: "Roboto Light";
-  letter-spacing: 2px;
 }
 
-@media only screen and (max-width: 600px) {
-  button {
-    width: 100% !important;
+.but:hover {
+  background-color: rgba(191, 12, 207, 0.93) !important;
+}
+
+@media screen and (min-width: 30em) {
+  #contact-form h2 {
+    margin-left: 26.3736%;
+    font-size: 2em;
+    line-height: 1.5;
+  }
+  label > span {
+    vertical-align: top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26.3736%;
+    padding-top: 10px;
+    border: 1px solid transparent;
+    text-align: right;
+  }
+  input, textarea, button {
+    width: 100%;
+    line-height: 1.5;
+  }
+  .but {
+    width: 120px;
+    height: 40px;
+    margin-top: 10px;
+  }
+  textarea {
+    height: 10em;
   }
 }
 
-button:hover, button:focus {
-  opacity: 0.75;
-  cursor: pointer;
+@media screen and (min-width: 48em) {
+  #contact-form {
+    text-align: justify;
+    line-height: 0;
+  }
+  #contact-form:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+  #contact-form h2 {
+    margin-left: 17.2661%;
+  }
+  #contact-form form, #contact-form aside {
+    vertical-align: top;
+    display: inline-block;
+    width: 65.4676%;
+    text-align: left;
+    line-height: 1.5;
+  }
+  #contact-form aside {
+    width: 30.9353%;
+  }
 }
 
-button:active {
-  opacity: 1;
-  -webkit-box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
-          box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1) inset;
+@media only screen and (max-width: 600px) {
+  .plus {
+    display: inline-block !important;
+    width: 100%;
+  }
+  label {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .but {
+    margin: auto;
+    display: block;
+  }
+  textarea::-webkit-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  textarea:-ms-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  textarea::-ms-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  textarea::placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  input::-webkit-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  input:-ms-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  input::-ms-input-placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  input::placeholder {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
 }
 
-.success {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  border-radius: 4px;
+.plus {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.error {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  border-radius: 4px;
+.plus label:first-child {
+  width: 100%;
+  padding-right: 5%;
+}
+
+.plus label:last-child {
+  width: 100%;
+}
+
+textarea::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+textarea:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+textarea::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+textarea::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+input:-webkit-autofill {
+  background-color: #ffff;
 }
 /*# sourceMappingURL=TwoPage.css.map */

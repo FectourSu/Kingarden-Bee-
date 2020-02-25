@@ -663,6 +663,9 @@ img {
   .s2 {
     font-size: 51px !important;
   }
+  #page-title {
+    font-family: "Roboto Light" !important;
+  }
 }
 
 @media (max-width: 400px) {

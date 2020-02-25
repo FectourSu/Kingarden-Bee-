@@ -23,6 +23,7 @@
   <script src="js/burgermenu.js"></script>
   <script src="js/hoverbutton.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/smtp.js"></script>
 </head>
 
 <body
@@ -44,7 +45,7 @@
       <li class="mobile-link">
         <a class="click_link" href="index.html">Главная</a>
       </li>
-      <li class="mobile-link active">
+      <li class="mobile-link">
         <a class="click_link" href="TwoPage.html">О нас</a>
       </li>
       <li class="mobile-link">
@@ -53,7 +54,7 @@
       <li class="mobile-link">
         <a class="click_link" href="ThreePage.html">Воспитатели</a>
       </li>
-      <li class="mobile-link">
+      <li class="mobile-link active">
         <a class="click_link" href="FivePage.html">Контакты</a>
       </li>
     </ul>
@@ -81,7 +82,7 @@
                   </li class="folder-collection">
                   <p class="tab">/</p>
                   <li class="folder-collection">
-                    <a href="FourPage.html" class="header-menu__link three active-link">ГРУППЫ</a>
+                    <a href="FourPage.html" class="header-menu__link three">ГРУППЫ</a>
                   </li class="folder-collection">
                   <p class="tab">/</p>
                   <li class="folder-collection">
@@ -89,7 +90,7 @@
                   </li class="folder-collection">
                   <p class="tab">/</p>
                   <li class="folder-collection">
-                    <a href="FivePage.html" class="header-menu__link five">КОНТАКТЫ</a>
+                    <a href="FivePage.html" class="header-menu__link five active-link">КОНТАКТЫ</a>
                   </li>
                 </ul>
               </nav>
@@ -173,27 +174,17 @@
                       data-aos-duration="500">
                     <h1 class="middle-h1"
                       style=" display: block;  text-transform: uppercase;  text-align: center; margin-bottom: 55px; font-size: 30px; line-height: 0px; color: rgb(153, 53, 184); font-family: Roboto light;">
-                      ПОЖУЖИМ</h1>
-                      <form id="ajax-contact" method="post" action="send.php">
-                        <div class="field">
-                          <label for="name">Имя:</label>
-                          <input type="text" id="name" name="name" required>
-                        </div>
-
-                        <div class="field">
-                          <label for="email">Email-адрес:</label>
-                          <input type="email" id="email" name="email" required>
-                        </div>
-
-                        <div class="field">
-                          <label for="message">Сообщение:</label>
-                          <textarea id="message" name="message" required></textarea>
-                        </div>
-
-                        <div class="field">
-                          <button type="submit">Отправить</button>
-                        </div>
-                      </form>
+                      ПОЖУЖЖИМ</h1>
+                        <form id="contact" name="contact" accept-charset="utf-8">
+                          <div class="plus">
+                          <label><span>Имя</span><input name="name" type="text" placeholder="Имя"
+                              autocomplete="off" /></label>
+                          <label><span>Email-адрес</span><input name="email" type="email" placeholder="Email-адрес"
+                              autocomplete = "off" /></label>
+                          </div>
+                          <label><span>Сообщение</span><textarea name="message" placeholder="Сообщение"></textarea></label>
+                          <input class = "but" name="submit" type="submit" value="ОТПРАВИТЬ" />
+                        </form>
                     </div>
                   </div>
                 </div>
@@ -306,7 +297,57 @@
   </div>
 <!--ajax MAIL-->
 <script>
+var form = $('#contact'),
+    submit = form.find('[name="submit"]');
 
+form.on('submit', function(e) {
+  e.preventDefault();
+  
+  // avoid spamming buttons
+  if (submit.attr('value') !== 'ОТПРАВИТЬ')
+    return;
+  
+  var valid = true;
+  form.find('input, textarea').removeClass('invalid').each(function() {
+    if (!this.value) {
+      $(this).addClass('invalid');
+      valid = false;
+    }
+  });
+  
+  if (!valid) {
+    form.animate({left: '-3em'},  50)
+        .animate({left:  '3em'}, 100)
+        .animate({left:    '0'},  50);
+  } else {
+    submit.attr('value', 'ОТПРАВКА...')
+          .css({boxShadow: 'none',
+                backgroundColor: '#ccc'});
+    // simulate AJAX response
+    setTimeout(function() {
+      // step 1: slide labels and inputs
+      // when AJAX responds with success
+      // no animation for AJAX failure yet
+      form.find('label')
+          .animate({left: '100%'}, 500)
+          .animate({opacity: '0'}, 500);
+    }, 1000);
+    setTimeout(function() {
+      // step 2: show thank you message after step 1
+      submit.attr('value', 'СПАСИБО :)')
+            .css({boxShadow: 'none'});
+    }, 2000);
+    setTimeout(function() {
+      // step 3: reset
+      form.find('input, textarea').val('');
+      form.find('label')
+          .css({left: '0'})
+          .animate({opacity: '1'}, 500);
+      submit.attr('value', 'ОТПРАВИТЬ')
+            .css({backgroundColor: ''});
+    }, 4000);
+  }
+});
 </script>
 <!--GOOGLE MAPS API-->
 <script>
