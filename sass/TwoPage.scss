@@ -2053,7 +2053,7 @@ figcaption span .img {
     align-items: center;
     width: 100%;
     height: 100%;
-    font-size: 20px;
+    font-size: 18px;
     transition: 0.5s;
     font-family: "Roboto Thin";
     text-transform: uppercase;
@@ -2104,8 +2104,12 @@ figcaption span .img {
         margin-bottom: 0px !important;
     }
 
+    .icon-c {
+        font-family: "Roboto Light";
+    }
+
     .box-c {
-        height: 130px !important;
+        height: 80px !important;
         border-top: 1px solid rgba(0, 0, 0, 0.1);
         border-right: none !important;
         width: 300px !important;
@@ -2120,7 +2124,7 @@ figcaption span .img {
     }
 
     .container-c .box-c:hover .icon-c .fas {
-        transform: translateY(130px);
+        transform: translateY(80px);
     }
 }
 
@@ -2269,6 +2273,7 @@ textarea {
     .but {
         margin: auto;
         display: block;
+        height: 40px;
     }
 
     textarea::placeholder {
@@ -2308,4 +2313,8 @@ input::placeholder {
 
 input:-webkit-autofill {
     background-color: #ffff;
+}
+
+.gm-style-mtc {
+    display: none !important;
 }
