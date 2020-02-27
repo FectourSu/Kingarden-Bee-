@@ -1,7 +1,9 @@
-var form = $('#contact'),
+function anim()
+{
+  var form = $('#contact'),
   submit = form.find('[name="submit"]');
 
-form.on('submit', function (e) {
+  form.on('submit', function (e) {
   e.preventDefault();
 
   // avoid spamming buttons
@@ -69,3 +71,4 @@ form.on('submit', function (e) {
     }, 4000);
   }
 });
+}
