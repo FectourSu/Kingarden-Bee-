@@ -1,6 +1,6 @@
 # Kingarden-Bee-
 <h2>LINK:
-https://fectoursu.github.io/Kingarden-Bee-/ 
+https://fectoursu.github.io/Kingarden-Bee
 </h2>
 <h3>
 - First experience in layout
